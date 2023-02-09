@@ -1,0 +1,32 @@
+.popup{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 60%;
+    z-index: 2!important;
+    color : black;
+    position: absolute;
+    left: 16%;
+    top: 8%;
+    background-color: rebeccapurple;
+}
+.popup.fermer{
+    display: none;
+}
+.popup.ouvert{
+    display: block;
+}
+
+.popup::after{
+    position: absolute;
+    display: block;
+    content: ' ';
+    background-color: red;
+    top: -7%;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    z-index: -100;
+}

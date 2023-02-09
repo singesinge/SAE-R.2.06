@@ -5,35 +5,52 @@
   <title>EscapeGame - Accueil</title>
   <meta name="description" content="Site créé par des étudiants en premiere année de BUT Informatique à Aix-En-Provence. Ce site propose un Escape-Game sur le thème informatique. Il a pour but de faire de la prevention sur les dangers d'internet">
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/bloc/Popup.css">
+  <link rel="stylesheet" href="CSS/bouton/Bfermeture.css">
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
   <script src="JS/script.js"></script>
   <script src="JS/btnOuverture.js"></script>
+  <script src="JS/btnFermeture.js"></script>
+  <script src="JS/parasite.js" defer></script>
 </head>
 <body>
   <nav class='bandeau'>
-    ACCUEIL
+    ACCUEIL 
   </nav> 
-  <main>
-    <div class="Bouverture">
-      <span></span>
+  <main id="ecran">
+    
+    <div class="popup fermer draggable" id="chrome" >
+      <div class="Bfermeture" onclick="fermer('chrome')">
+        <span></span>
+        <span></span>
+      </div>   
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
+
+    <div class="popup fermer draggable" id="folder">
+      <div class="Bfermeture" onclick="fermer('folder')">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="popup fermer draggable" id="twitter">
+      <div class="Bfermeture" onclick="fermer('twitter')">
+        <span></span>
+        <span></span>
+      </div>
+    </div>    
+    
     <footer>
       <img src="ressources/windowsLo.png" id="logoWindows" alt="">
       <ul>
-        <li><img src="ressources/chromeLogo.png" alt="" onclick="ouvreFenetre()"></li>
-        <li><img src="ressources/folderLogo.png" alt=""></li>
-        <li><img src="ressources/twitterLogo.webp" alt=""></li>
+        <li><img src="ressources/chromeLogo.png" alt="" onclick="ouvre('chrome')"></li>
+        <li><img src="ressources/folderLogo.png" alt="" onclick="ouvre('folder')"></li>
+        <li><img src="ressources/twitterLogo.webp" alt="" onclick="ouvre('twitter')"></li>
         <li><img src="" alt=""></li>
       </ul>
-      <h5 id="time">12:54</h5>
+      <h5 id="time"></h5>
     </footer>
   </main>
-
-<div class='bandeau'>
-  <a href="./ancre1" class="acceuil">Acceuil</a>
-  <a href="./pagejeu.html" class="jouer">Jouer</a>
-  <a href="./ancre2" class="regles">Regles</a>
-</div>
-<script src="JS/script.js"></script>
 </body>
 </html>
-A

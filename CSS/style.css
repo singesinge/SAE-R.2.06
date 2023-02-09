@@ -1,5 +1,5 @@
 html{
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+	font-family: Arial, Helvetica, sans-serif;
 }
 body{
 	width: 100%;
@@ -9,21 +9,15 @@ body{
     margin: 0px;
     padding: 0;
 	font-size: 22px;
+	font-family: monospace; 
 	font-style: normal;
 	background: #848484;
-
     display: flex;
     box-shadow: 0px 12px 10px 10px rgba(10, 14, 12, 0.5);
 }
 
 nav {
     position: fixed;
-
-}
-
-.bandeau {
-    position:fixed;
-    z-index: 10;
     height: 50px;
     width: 100vw;
     border: none;
@@ -55,91 +49,100 @@ footer{
     background-color: rgba(53, 58, 57, 0.9);
     height: 9%;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     bottom: 0;
     left: 0;
 }
 
+#folder{
+    background-image: url("../ressources/dossier.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#folder img{
+    visibility: hidden;
+}
+
 #logoWindows{
-    height: 80%;
+    background-color: black;
     width: auto;
-    position: absolute;
-    bottom: 10%;
-    top: 10%;
-    left: 1%;
+    padding: 1% 2%;
 }
 
 h5{
-    position: absolute;
-    right: 1%;
-    top: -1vh;
-    color:white
+    color:white;
+    padding-right: 3%;
 }
 
-ul li img{
-    height: 4vh;
+footer{
+    align-items: center;
+}
+footer img{
+    height: 5vh;
     width: auto;
 }
 
-ul li{
+footer ul li{
     list-style: none;
-    margin-left: 5%;
 }
 
-ul{
-    bottom: -25%;
-    left: 3%;
-    position: absolute;
+footer ul{
     display: flex;
+    margin-right: auto;
+}
+
+@keyframes barreTemps{
+    0%{
+        width: 100%;
+    }
+    50%{
+        background-color: yellow;
+    }
+    60%{
+        background-color: orange;
+    }
+    90%{
+        background-color: red;
+    }
+    100%{
+        width: 0;
+        background-color: red;
+    }
+}
+
+@keyframes pop-up-spam-apparait{
+    0%{
+        left: 0;
+    }
+    60%{
+        right: 50%;
+    }
+    100%{
+        right: 40%;
+    }
+}
+
+.spam-pop-up{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     width: 30%;
+    height: 15%;
+    text-align: center;
+    font-size: 0.7em;
+    background-color: white;
+    animation: pop-up-spam-apparait 0.7s forwards;
 }
 
-.acceuil {
-    position:absolute;
-    width: 8%;
-    color: white;
-    text-align:center;
-    left: 15%;
-    transition: all 0.2s ease-in-out;
-    border-radius: 3px;
-    border: 2px solidrgb(255, 255, 255);
-    text-decoration: none;
-}
 
-.acceuil:hover {
-background: rgb(208, 208, 208);
-color: #000000;
+body::before{
+    position: absolute;
+    top: 50px;
+    content: ' ';
+    display: block;
+    width: 0%;
+    height: 2vh;
+    background-color: green;
+    animation: barreTemps 1800s;
 }
-
-.regles {
-    position:absolute;
-    width: 6%;
-    color: white;
-    text-align:center;
-    transition: all 0.2s ease-in-out;
-    border-radius: 3px;
-    border: 2px solidrgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.regles:hover {
-background: rgb(208, 208, 208);
-color: #000000;
-}
-
-.jouer {
-    position:absolute;
-    width: 6%;
-    color: white;
-    text-align:center;
-    right: 15%;
-    transition: all 0.2s ease-in-out;
-    border-radius: 3px;
-    border: 2px solidrgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.jouer:hover {
-background: rgb(208, 208, 208);
-color: #000000;
-}
-

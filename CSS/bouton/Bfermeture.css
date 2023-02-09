@@ -1,0 +1,26 @@
+.Bfermeture{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: auto;
+
+}
+.Bfermeture span{  /* on initialise chaque span du bouton par défaut noir d'une certaine forme  */
+    z-index: 3!important;
+    top: -3%;
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: #000000;
+    border-radius: 4px;
+}
+.Bfermeture span:nth-child(1){ /* barre une */
+    transform: rotate(50deg);
+}
+.Bfermeture span:nth-child(2){ /* barre deux */
+    transform: rotate(-50deg);
+}
