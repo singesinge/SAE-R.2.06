@@ -1,13 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EscapeTheHack</title>
+	<meta name="description" content="Site créé par des étudiants en premiere année de BUT Informatique à Aix-En-Provence. 
+									Ce site propose un Escape-Game sur le thème du Hack. Il a pour but de faire de la 
+									prevention sur les dangers d'internet et plus particulierement le cyberharcelement">
+    <link rel="stylesheet" href="./CSS/style2.css">
+	<link rel="icon" href= "./ressources/hacked.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <a href="HTML/jeu.html"> jeu</a>
-    
+	<a id='ancre1'></a>
+	<!--menu navigation-->
+	<nav>
+        <a class="txtcenter" href="./index.html#ancre1">Acceuil</a>
+        <a class="txtcenter" href="./index.html#ancre2">Notre jeu</a>
+        <a class="txtcenter" href="./index.html#ancre3">Le cyberharcelement</a>
+		<a class="txtcenter" href="./index.html#ancre4">Le harcelement <br> en france</a>
+        <a class="txtcenter" href="./index.html#ancre5">Le harcelement<br> à l'ecole </a>
+		<a class="txtcenter" href="./index.html#ancre6">Jouer</a>
+    </nav>
+
+	<!--boutton du menu defilant-->
+    <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
+        <span class="line l1"></span>
+        <span class="line l2"></span>
+        <span class="line l3"></span>
+    </button>
+	<a class="button"></a>
+
+	<!--image de fond + ecriture auto-->
+	<div class="acceuil">
+		<h1>ESCAPE THE HACK</h1>
+	</div>
+
+	<!--lien de l'ancrage-->
+	<a id='ancre2'></a>
+
+	<!--image du fond-->
+	<img class="devImg"></img>
+
+	<!--animation d'apparition-->
+	<div class='reveal reveal-1' >	
+		<!--zone de texte "console"-->
+		<div class='console1'>
+			<p class="blanc" >
+				<span class="lime_color">Last login: Thu Feb  9 18:58:59 on ttys000 <br></span>
+				<span class="lime_color">thomas@MacBook-Pro-de-Thomas</span>:<span class="green_color">~</span>% man notre-Jeu<br>
+			</p>
+			<!--pour faire apparaitre le texte en blanc-->
+			<p class="blanc" >
+				Vous incarnez un individu qui se connecte sur l’ordinateur déjà allumé d’un ami. <br> <br>
+				Quelle surprise ! Ses données sont en train d’être piratées par un hacker à distance… <br><br>
+				Il faut empêcher le pirate de télécharger ses données ! <br><br>
+				Pour cela, il faut trouver le mot de passe de l’ordinateur afin d’empêcher le transfert des données vers l’ordinateur du pirate : <br><br>
+				des bribes du mot de passe sont éparpillées à travers les fichiers de l'ordinateur de votre ami. <br><br>
+				Vous devez donc rassembler les caractères du mot de passe avant la fin du transfert des données qui dure 20 minutes ! <br><br>
+				Bonne chance…
+			</p>
+			<p class="blanc" >
+				<span class="lime_color">thomas@MacBook-Pro-de-Thomas</span>:<span class="green_color">~</span>%<span class='clignote'> █</span> <br>
+			</p>
+		</div>
+	</div>
+
+	<!--image de fond numero 2-->
+	<a id='ancre3'></a>
+	<div class="devImg4">
+		<div class="jouer">
+			<a href="https://github.com/singesinge/SAE-HTML/blob/main/Thomas/css/style.css">JOUER</a>
+		</div>
+	</div>
+	<div class='reveal reveal-1' >	
+		<img class="devImg3"></img>
+		<!--zone de texte "console"-->
+		<div class='console2'>
+			<!--pour faire apparaitre le texte en blanc-->
+			<p class="blanc txtcenter" >
+				Le harcèlement sur les réseaux sociaux est un problème sérieux qui peut avoir des conséquences graves pour les victimes. <br><br>
+				Les gens utilisent souvent les réseaux sociaux pour s'exprimer et se connecter avec d'autres personnes, mais certains utilisent ces plateformes pour diffamer, intimider et harceler les autres. <br><br>
+				Les victimes de harcèlement en ligne peuvent subir une baisse de leur estime de soi, de la dépression et même de l'anxiété. <br><br>
+				Il est important de signaler tout comportement abusif sur les réseaux sociaux et de faire preuve de compassion envers ceux qui en sont victimes. <br><br>
+				Ensemble, nous pouvons travailler pour mettre fin au harcèlement sur les réseaux sociaux et créer un environnement en ligne plus sûr et plus accueillant pour tous <br>
+			</p>
+		</div>
+		
+	</div>
+	<div class="devImg2"></div>
+	<div class="devImg5"></div>
+	<div class="devImg6"></div>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="./js/script2.js"></script>
 </body>
 </html>
