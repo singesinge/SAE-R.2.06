@@ -19,6 +19,6 @@ function createMessage(){
     document.getElementById("ecran").appendChild(div);
 }
 
-setInterval(createMessage, 1000)
+setInterval(createMessage, 30000)
 
 
