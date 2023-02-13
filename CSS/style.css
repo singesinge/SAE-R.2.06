@@ -51,6 +51,7 @@ footer{
     position: absolute;
     display: flex;
     justify-content: space-between;
+    z-index: 0 !important;
     bottom: 0;
     left: 0;
 }
@@ -58,7 +59,8 @@ footer{
 #folder{
     background-image: url("../ressources/dossier.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    width: 80%;
+    height: 65%;
 }
 
 #folder img{
