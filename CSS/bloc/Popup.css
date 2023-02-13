@@ -11,6 +11,7 @@
     left: 16%;
     top: 8%;
     background-color: rebeccapurple;
+    cursor: default !important;
 }
 .popup.fermer{
     display: none;
@@ -29,4 +30,5 @@
     height: 7%;
     width: 100%;
     z-index: -100;
+    cursor: grab;
 }
