@@ -105,9 +105,20 @@ h5{
 footer{
     align-items: center;
 }
+
 footer img{
-    height: 5vh;
+    height: 4vh;
+    margin-top: 0.5vh;
+    padding: 0.8vh 0.8vw;
     width: auto;
+    cursor: pointer;
+}
+
+footer img:hover{
+    background-color: rgba(163, 163, 163, 0.16);
+    border-radius: 4px;
+    transition: background-color 0.4s;
+
 }
 
 footer ul li{
@@ -175,9 +186,27 @@ body::before{
 
 #openImageFolderButton{
     position: absolute;
-    width: 13%;
-    height: 20%;
-    top: 60%;
+    width: 12%;
+    height: 22%;
+    top: 57%;
     left: 55%;
     cursor: pointer;
+}
+
+.popup h2{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0 7%;
+    border-radius: 20px;
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 500;
+    top: -8.5%;
+    left: 2%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#openImageFolderButton:hover{
+    background-color: rgba(163, 163, 163, 0.16);
+    border-radius: 4px;
+    transition: background-color 0.4s;
 }
