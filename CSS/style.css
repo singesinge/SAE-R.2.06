@@ -65,6 +65,12 @@ footer{
     visibility: hidden;
 }
 
+#chrome {
+    background-image: url("../ressources/mail.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #logoWindows{
     background-color: black;
     width: auto;
