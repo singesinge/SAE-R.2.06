@@ -61,6 +61,12 @@ footer{
     background-repeat: no-repeat;
 }
 
+#chatImageFolder{
+    background-image: url("../ressources/chatFenetre.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #folder img{
     visibility: hidden;
 }
