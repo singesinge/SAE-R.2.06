@@ -7,7 +7,7 @@ function updateTime() {
     timeDisplay.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     timeleft--
     var textTelechargement = document.getElementById('DownloadText');
-    textTelechargement.innerHTML = "Telechargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"
+    textTelechargement.innerHTML = "Téléchargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"
     var barreTelechargement = document.getElementById('barreTelechargement');
     barreTelechargement.style.width = (0.75*(100-timeleft*100/totaltime).toFixed(2))+"%"
   }
