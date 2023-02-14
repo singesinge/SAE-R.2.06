@@ -19,28 +19,36 @@
   </nav> 
   <main id="ecran">
     
+    <!-- Fenetre Chrome -->
     <div class="popup fermer draggable" id="chrome" >
       <div class="Bfermeture" onclick="fermer('chrome')">
         <span></span>
         <span></span>
       </div>   
       <h2>Mails</h2>
+      <img src="../ressources/mail.png" alt="">
     </div>
 
+
+    <!-- Fenetre Dossier -->
     <div class="popup fermer draggable" id="folder">
       <div class="Bfermeture" onclick="fermer('folder')">
         <span></span>
         <span></span>
       </div>
       <h2>Dossier</h2>
+      <img src="../ressources/dossier.png" alt="">
       <div id="openImageFolderButton" onclick="ouvre('chatImageFolder')"></div>
     </div>
 
+
+    <!-- Fenetre Dossier Chats-->
     <div id="chatImageFolder" class="popup fermer draggable">
       <div class="Bfermeture" onclick="fermer('chatImageFolder')">
         <span></span>
         <span></span>
       </div>
+      <img src="../ressources/chatFenetre.png" alt="">
     </div>
 
     <div class="popup fermer draggable" id="twitter">
@@ -66,6 +74,17 @@
       <h2>Bloc-notes</h2>
       <textarea></textarea>
     </div>
+
+    <div class="popup fermer draggable" id="virus">
+      <div class="Bfermeture" onclick="fermer('virus')">
+        <span></span>
+        <span></span>
+      </div>
+      <h1 id="DownloadText">Telechargement : 0%</h2>
+      <header id="barreTelechargement"></header>   
+      <input id="password" type="password" placeholder="Mot de passe Administrateur" />
+      <input type="button" value="VALIDER" onclick="verifMdp()">
+    </div>
     
     <footer>
       <img src="../ressources/windowsLo.png" id="logoWindows" alt="">
@@ -75,6 +94,7 @@
         <li><img src="../ressources/folderLogo.png" alt="" onclick="ouvre('folder')"></li>
         <li><img src="../ressources/twitterLogo.webp" alt="" onclick="ouvre('twitter')"></li>
         <li><img src="../ressources/bloc-notes.png" alt="" onclick="ouvre('notes')"></li>
+        <li><img src="../ressources/virus.png" alt="" onclick="ouvre('virus')"></li>
       </ul>
       <h5 id="time"></h5>
     </footer>

@@ -68,28 +68,85 @@ footer{
     font-size: 0.7em;
 }
 
-#folder{
-    background-image: url("../ressources/dossier.png");
-    background-size: cover;
-    width: 80%;
-    height: 65%;
+#folder, #chatImageFolder, #chrome{
+    width: fit-content;
+    height: auto;
     position: relative;
 }
 
 #chatImageFolder{
-    background-image: url("../ressources/chatFenetre.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: absolute;
 }
 
-#folder img{
-    visibility: hidden;
+#folder img, #chatImageFolder img{
+    width: 70vw;
+    height: auto;
 }
 
-#chrome {
-    background-image: url("../ressources/mail.png");
+#chrome img{
+    width: 50vw;
+    height: auto;
+}
+
+#virus{
+    position: relative;
+    background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
     background-size: cover;
-    background-repeat: no-repeat;
+}
+
+#virus h1{
+    color: rgb(228, 215, 215);
+}
+
+#virus [type='password']{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 1em;
+    width: 40%;
+    height: 10%;
+    border: none;
+    background: rgba(57, 63, 84, 0.8);
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#virus [type='button'] {
+    position: absolute;
+    width: 15%;
+    height: 6%;
+    top: 65%;
+    left: 43.5%;
+    border: none;
+    color: rgb(212, 209, 209);
+    background-color: rgb(9, 124, 190);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#virus [type='submit']:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+#barreTelechargement{
+    position: absolute;
+    width: 75%;
+    height: 7%;
+    top: 80%;
+    left: 14%;
+    border: solid 1px;
+}
+
+#barreTelechargement::before{
+    display: block;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    animation: chargementBarre 1200s forwards;
 }
 
 #logoWindows{
@@ -158,6 +215,15 @@ footer ul{
     }
     100%{
         right: 40%;
+    }
+}
+
+@keyframes chargementBarre{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
     }
 }
 

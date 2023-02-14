@@ -1,10 +1,28 @@
+totaltime = 1200
+timeleft = totaltime
+
 function updateTime() {
     const timeDisplay = document.querySelector('#time');
     const now = new Date();
     timeDisplay.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    timeleft--
+    var textTelechargement = document.getElementById('DownloadText');
+    textTelechargement.innerHTML = "Telechargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"
   }
 
 setInterval(updateTime, 1000);
+
+
+function verifMdp(){
+  var mdpGuess = document.getElementById('password');
+  if(mdpGuess.value === "test"){
+    alert("bon");
+  }else{
+    alert("mauvais");
+    mdpGuess.value = ""
+  }
+}
+
 
 const position = { x: 0, y: 0 }
 
@@ -20,3 +38,4 @@ interact('.draggable').draggable({
     },
   }
 })
+
