@@ -8,6 +8,8 @@ function updateTime() {
     timeleft--
     var textTelechargement = document.getElementById('DownloadText');
     textTelechargement.innerHTML = "Telechargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"
+    var barreTelechargement = document.getElementById('barreTelechargement');
+    barreTelechargement.style.width = (0.75*(100-timeleft*100/totaltime).toFixed(2))+"%"
   }
 
 setInterval(updateTime, 1000);
