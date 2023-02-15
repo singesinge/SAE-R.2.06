@@ -44,7 +44,7 @@ main {
 }
 
 
-footer{
+#barreTache{
     width: 100%;
     background-color: rgba(53, 58, 57, 0.9);
     height: 9%;
@@ -68,7 +68,7 @@ footer{
     font-size: 0.7em;
 }
 
-#folder, #chatImageFolder, #chrome{
+#folder, #chatImageFolder, #chrome, #twitter{
     width: fit-content;
     height: auto;
     position: relative;
@@ -274,3 +274,95 @@ body::before{
     border-radius: 4px;
     transition: background-color 0.4s;
 }
+
+#postit{
+    position: relative;
+    width: 13vw;
+    height: 13vw;
+    left: 80%;
+    transform: rotate(-12deg);
+    background-color: yellow;
+    text-align: center;   
+    cursor: pointer;
+}
+
+.facePostIt{
+    position: absolute;
+}
+
+#postit p{
+    font-size: 0.8em;
+}
+
+#postit #recto{
+    display: block;
+}
+
+#postit #verso{
+    top: 30%;
+    left: 5%;
+    display: none;
+}
+
+@keyframes flip{
+    0%{
+        transform: rotate(-12deg);
+    }
+    50%{
+        transform: rotateY(180deg) rotate(12deg);
+    }
+    100%{
+        transform: rotate(-12deg);
+    }
+
+}
+
+#motDePasseTwitter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#motDePasseTwitter img{
+    z-index: -1;
+}
+
+#motDePasseTwitter input{
+    position: absolute;
+    width: 30%;
+    height: 5%;
+}
+
+#usernameTwitter{
+    top: 50%;
+    left: 37%;
+}
+
+#passwordTwitter{
+    top: 60%;
+    left: 37%;
+}
+
+#validationButtonTwitter{
+    top: 70%;
+    left: 37.5%;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#appTwitter{
+    display: none;
+    max-height: 40%;
+    width: fit-content;
+    overflow: scroll;
+    margin-top: 0;
+}
+
+#appTwitter img{
+    width: 40vw;
+    height: auto;
+}
+

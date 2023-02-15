@@ -12,6 +12,36 @@ function updateTime() {
     barreTelechargement.style.width = (0.75*(100-timeleft*100/totaltime).toFixed(2))+"%"
   }
 
+function changePostIt(){
+  var postIt1 = document.getElementById('recto');
+  var postIt2 = document.getElementById('verso');
+  if(postIt1.style.display != 'none'){
+    postIt1.style.display = 'none'
+    postIt2.style.display = 'block'
+  }
+  else{
+    postIt2.style.display = 'none'
+    postIt1.style.display = 'block'
+  }
+}
+
+function verifMdpTwitter(){
+  var username = document.getElementById('usernameTwitter');
+  var password = document.getElementById('passwordTwitter');
+
+  if(username.value === "test" && password.value === "test"){
+    var connectionWindow = document.getElementById('motDePasseTwitter');
+    var pageTwitter = document.getElementById('appTwitter');
+    connectionWindow.style.display = "none"
+    pageTwitter.style.display = "block"
+  }else{
+    alert("pas reussit")
+    password.value = ""
+  }
+}
+
+
+
 setInterval(updateTime, 1000);
 
 

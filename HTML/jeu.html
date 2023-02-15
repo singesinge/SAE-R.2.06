@@ -19,6 +19,17 @@
   </nav> 
   <main id="ecran">
     
+    <div id="postit" onclick="changePostIt()">
+      <header id="recto" class="facePostIt">
+      <h3>Notes</h3>
+      <p> - Faire la vaiselle</p>
+      <p> - Nourir Yukicrane</p>
+      <p> - Finir la SAE 2.06</p>
+      </header>
+      <footer id="verso" class="facePostIt">
+        <p>mdp twitter : ecole+numchat</p>
+      </footer>
+    </div>
     <!-- Fenetre Chrome -->
     <div class="popup fermer draggable" id="chrome" >
       <div class="Bfermeture" onclick="fermer('chrome')">
@@ -51,11 +62,23 @@
       <img src="../ressources/chatFenetre.png" alt="">
     </div>
 
+    <!-- Fenetre Twitter -->
     <div class="popup fermer draggable" id="twitter">
       <div class="Bfermeture" onclick="fermer('twitter')">
         <span></span>
         <span></span>
       </div>
+      <h2>Twitter</h1>
+      <header id="motDePasseTwitter">
+        <img src="../ressources/twitterConnection.png" alt="">
+        <input type="text" id="usernameTwitter" placeholder="Nom d'Utilisateur">
+        <input type="password" id="passwordTwitter" placeholder="Mot De Passe">
+        <input type="button" value="VALIDER" id="validationButtonTwitter" onclick="verifMdpTwitter()">
+      </header>
+      <main id="appTwitter">
+        <img src="../ressources/twitterFeed.png" alt="">
+      </main>
+
     </div>   
     
     <div class="popup fermer draggable" id="word" >
@@ -86,7 +109,7 @@
       <input type="button" value="VALIDER" onclick="verifMdp()">
     </div>
     
-    <footer>
+    <footer id="barreTache">
       <img src="../ressources/windowsLo.png" id="logoWindows" alt="">
       <ul>
         <li><img src="../ressources/chromeLogo.png" alt="" onclick="ouvre('chrome')"></li>
