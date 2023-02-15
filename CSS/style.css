@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
 html{
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -284,11 +286,13 @@ body::before{
     background-color: yellow;
     text-align: center;   
     cursor: pointer;
+    font-family: 'Schoolbell', cursive;
 }
 
 .facePostIt{
     position: absolute;
 }
+
 
 #postit p{
     font-size: 0.8em;
@@ -296,6 +300,11 @@ body::before{
 
 #postit #recto{
     display: block;
+    left: 15%;
+}
+
+#postit #recto p:nth-child(4){
+    text-decoration: line-through;
 }
 
 #postit #verso{
