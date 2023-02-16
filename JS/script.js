@@ -1,16 +1,22 @@
 totaltime = 1200
 timeleft = totaltime
+const ecranlose = document.getElementById('ecranDefaite')
 
 function updateTime() {
     const timeDisplay = document.querySelector('#time');
     const now = new Date();
     timeDisplay.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     timeleft--
+    if (100-timeleft*100/totaltime<=0){
+      ecranlose.style.display = 'bloc'
+    }
     var textTelechargement = document.getElementById('DownloadText');
     textTelechargement.innerHTML = "Téléchargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"
     var barreTelechargement = document.getElementById('barreTelechargement');
     barreTelechargement.style.width = (0.75*(100-timeleft*100/totaltime).toFixed(2))+"%"
+
   }
+
 
 function changePostIt(){
   var postIt1 = document.getElementById('recto');
