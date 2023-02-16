@@ -375,3 +375,42 @@ body::before{
     height: auto;
 }
 
+#ecranDefaite,  #ecranVictoire{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 100vh;
+    left: 0;
+    z-index: 5;
+    animation: apparition 1.5s forwards;
+    align-items: center;
+    justify-content: center;
+}
+
+#ecranDefaite{
+    background-color: red;
+    display: none;
+}
+
+
+#ecranVictoire{
+    background-color: rgb(36, 218, 36);
+}
+
+#ecranDefaite h1,  #ecranVictoire h1{
+    color: white;
+}
+
+
+@keyframes apparition{
+    0%{
+        top: 100vh;
+    }
+
+
+    100%{
+        top: 0;
+    }
+}
+
