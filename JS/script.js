@@ -1,14 +1,14 @@
-totaltime = 1200
+totaltime = 2
 timeleft = totaltime
-const ecranlose = document.getElementById('ecranDefaite')
 
 function updateTime() {
+    const ecranlose = document.getElementById('ecranDefaite')
     const timeDisplay = document.querySelector('#time');
     const now = new Date();
     timeDisplay.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     timeleft--
-    if (100-timeleft*100/totaltime<=0){
-      ecranlose.style.display = 'bloc'
+    if (timeleft===0){
+      ecranlose.style.display = 'block'
     }
     var textTelechargement = document.getElementById('DownloadText');
     textTelechargement.innerHTML = "Téléchargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"

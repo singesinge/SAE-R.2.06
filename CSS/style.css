@@ -395,6 +395,7 @@ body::before{
 
 
 #ecranVictoire{
+    display: none;
     background-color: rgb(36, 218, 36);
 }
 
