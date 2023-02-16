@@ -1,4 +1,4 @@
-totaltime = 2
+totaltime = 1200
 timeleft = totaltime
 
 function updateTime() {
@@ -8,7 +8,7 @@ function updateTime() {
     timeDisplay.textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     timeleft--
     if (timeleft===0){
-      ecranlose.style.display = 'block'
+      ecranlose.style.display = 'flex'
     }
     var textTelechargement = document.getElementById('DownloadText');
     textTelechargement.innerHTML = "Téléchargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"
@@ -53,8 +53,9 @@ setInterval(updateTime, 1000);
 
 function verifMdp(){
   var mdpGuess = document.getElementById('password');
+  const ecranvictoire = document.getElementById('ecranVictoire')
   if(mdpGuess.value === "test"){
-    alert("bon");
+    ecranvictoire.style.display = "flex"
   }else{
     alert("mauvais");
     mdpGuess.value = ""
