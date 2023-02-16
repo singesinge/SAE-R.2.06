@@ -27,7 +27,7 @@
       <p> - Finir la SAE 2.06</p>
       </header>
       <footer id="verso" class="facePostIt">
-        <p>mdp twitter : ecole+numchat</p>
+        <p>mdp twitter : college+numchat</p>
       </footer>
     </div>
     <!-- Fenetre Chrome -->
@@ -40,6 +40,40 @@
       <img src="../ressources/mail.png" alt="">
     </div>
 
+    <div id="passwordDocument" class="draggable popup fermer">
+      <div class="Bfermeture" onclick="fermer('passwordDocument')">
+        <span></span>
+        <span></span>
+      </div>  
+      Mot de passe :  <input type="date" id="dateDocPass">
+      <input type="button" value="VALIDER" onclick="verifMdpDocument()">
+    </div>
+
+  <div class="popup fermer draggable" id="folderDocument">
+      <div class="Bfermeture" onclick="fermer('folderDocument')">
+        <span></span>
+        <span></span>
+      </div>
+      <h2>Dossier</h2>
+      <img src="../ressources/dossierDocument.png" alt="">
+      <div id="openPasswordButton" onclick="ouvre('testPassword')"></div>
+  </div>
+
+  <div class="popup fermer draggable" id="testPassword">
+    <div class="Bfermeture" onclick="fermer('testPassword')">
+      <span></span>
+      <span></span>
+    </div>   
+    <h2>Mot de passe</h2>
+    <textarea>Mot de passe Administrateur : 1918 7518 2518 
+
+
+
+
+Note (ATTENTION !!!!!!!!!!!!!!!!!!!!!!) COM=31513
+    </textarea>
+  </div>
+
 
     <!-- Fenetre Dossier -->
     <div class="popup fermer draggable" id="folder">
@@ -50,6 +84,7 @@
       <h2>Dossier</h2>
       <img src="../ressources/dossier.png" alt="">
       <div id="openImageFolderButton" onclick="ouvre('chatImageFolder')"></div>
+      <div id="openDocumentFolderButton" onclick="ouvre('chatImageFolder')"></div>
     </div>
 
 
@@ -71,7 +106,7 @@
       <h2>Twitter</h1>
       <header id="motDePasseTwitter">
         <img src="../ressources/twitterConnection.png" alt="">
-        <input type="text" id="usernameTwitter" placeholder="Nom d'Utilisateur">
+        <input type="text" id="usernameTwitter" placeholder="Nom d'Utilisateur" value="Doumbaaa">
         <input type="password" id="passwordTwitter" placeholder="Mot De Passe">
         <input type="button" value="VALIDER" id="validationButtonTwitter" onclick="verifMdpTwitter()">
       </header>
@@ -86,7 +121,10 @@
         <span></span>
         <span></span>
       </div>   
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>Mon premier est un endroit de résidence pour les étudiants où ils peuvent également y manger</p>
+        <p>Mon second est la première syllabe du dinosaure carnivore le plus connu et le plus meurtrier.</p>
+        <p>Mon dernier est un objet utilisé dans un sport qui peut désigner un animal nocturne en anglais.</p>
+        <p>Mon tout forme une marque connue de poisson pané, mais également le nom d’un lycée ou Mr marteau enseigne.</p>
     </div>
 
     <div class="popup fermer draggable" id="notes">
@@ -98,7 +136,7 @@
       <textarea></textarea>
     </div>
 
-    <div class="popup ouvre draggable" id="virus">
+    <div class="popup fermer draggable" id="virus">
       <div class="Bfermeture" onclick="fermer('virus')">
         <span></span>
         <span></span>
@@ -129,6 +167,9 @@
   </div>
   <div id="ecranVictoire">
     <h1>VICTOIRE</h1>
+  </div>
+  <div class="draggable popup" id="feuille">
+    <img src="../ressources/pageChat.png" alt="" id="feuille">
   </div>
 </body>
 </html>
