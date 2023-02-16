@@ -401,6 +401,7 @@ body::before{
 
 #ecranDefaite h1,  #ecranVictoire h1{
     color: white;
+    font-size: 4em;
 }
 
 
