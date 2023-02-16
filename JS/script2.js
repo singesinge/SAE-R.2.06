@@ -7,7 +7,7 @@ new Typewriter(txtAnim, {
 .changeDelay(100)
 .typeString('<em class="blanc2">ESCAPE THE HACK</em>')
 .pauseFor(200)
-.typeString('<em class="blanc3"><br>by:<br> Alexandre BERGERON<br>Ayoub BIHI<br>Léo GINER <br>Mathias BAMAS<br>Thomas BOUT</em>')
+.typeString('<em class="blanc3"><br>by:<br>Mathias BAMAS<br>Alexandre BERGERON<br>Ayoub BIHI<br>Thomas BOUT<br>Léo GINER <br></em>')
 .pauseFor(7000)
 .start()
 
