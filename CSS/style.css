@@ -296,6 +296,7 @@ body::before{
 
 #postit p{
     font-size: 0.8em;
+    word-wrap: break-word;
 }
 
 #postit #recto{
@@ -416,3 +417,6 @@ body::before{
     }
 }
 
+#word{
+    word-wrap: break-word;
+}
