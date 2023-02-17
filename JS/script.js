@@ -1,6 +1,15 @@
 totaltime = 1200
 timeleft = totaltime
 
+indice = ["Tu devrais cherché si quelque chose n'est pas caché sur le bureau",
+          "Tien il y a un fichier word ?",
+          "Le dossier document a l'air protéger par une date de naissance",
+          "A = 1 B = 2 E = 5 ?"]
+gameState = 0
+
+function showIndice(){
+  alert(indice[gameState])
+}
 function updateTime() {
     const ecranlose = document.getElementById('ecranDefaite')
     const timeDisplay = document.querySelector('#time');
@@ -25,6 +34,7 @@ function verifMdpDocument(){
   if(date.value === "2007-03-25"){
     ouvre('folderDocument')
     fermer('passwordDocument')
+    if(gameState < 3) gameState = 3
   }
 }
 
@@ -39,6 +49,8 @@ function changePostIt(){
     postIt2.style.display = 'none'
     postIt1.style.display = 'block'
   }
+
+  if(gameState < 1) gameState = 1
 }
 
 function verifMdpTwitter(){
@@ -50,6 +62,7 @@ function verifMdpTwitter(){
     var pageTwitter = document.getElementById('appTwitter');
     connectionWindow.style.display = "none"
     pageTwitter.style.display = "block"
+    gameState = 2
   }else{
     username.value = "Doumbaaa"
     password.value = ""
