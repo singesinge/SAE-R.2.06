@@ -15,5 +15,5 @@ function intro(){
 
 function fermeIntro(){
     document.getElementById('ecranIntro').style.display = "none"
-
+    setInterval(createMessage, 30000)
 }

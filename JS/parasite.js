@@ -1,5 +1,15 @@
 let lmessage = [
-    "R - 95"
+    "Je ne veux plus te voir",
+    "Disparait !",
+    "Tu fais pitié !",
+    "T'es moche !",
+    "Comment c'est possible d'etre comme toi ?",
+    "Tu devrais songer à changer d'identité !",
+    "Personne veut de toi !",
+    "Très claqué !",
+    "Laly parait plus heureuse que toi !",
+    "On va capturer ton chat !",
+    "R - 95",
 ]
 
 function createMessage(){
@@ -15,6 +25,5 @@ function createMessage(){
     document.getElementById("ecran").appendChild(div);
 }
 
-setInterval(createMessage, 30000)
 
 

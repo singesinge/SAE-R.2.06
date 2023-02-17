@@ -10,6 +10,9 @@ function updateTime() {
     if (timeleft===0){
       ecranlose.style.display = 'flex'
     }
+    if(timeleft === 800 || timeleft === 600 || timeleft === 400 || timeleft === 200 || timeleft === 150 || timeleft === 100 || timeleft === 50){
+      setInterval(createMessage, 50000)
+    }
     var textTelechargement = document.getElementById('DownloadText');
     textTelechargement.innerHTML = "Téléchargement : " + (100-timeleft*100/totaltime).toFixed(2) + "%"
     var barreTelechargement = document.getElementById('barreTelechargement');
