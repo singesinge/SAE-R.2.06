@@ -42,7 +42,7 @@ function verifMdpTwitter(){
   var username = document.getElementById('usernameTwitter');
   var password = document.getElementById('passwordTwitter');
 
-  if(username.value === "Doumbaaa" && password.value === "croustibate30"){
+  if(username.value === "Doumbaaa" && password.value === "croustibat30"){
     var connectionWindow = document.getElementById('motDePasseTwitter');
     var pageTwitter = document.getElementById('appTwitter');
     connectionWindow.style.display = "none"
@@ -61,10 +61,15 @@ setInterval(updateTime, 1000);
 function verifMdp(){
   var mdpGuess = document.getElementById('password');
   const ecranvictoire = document.getElementById('ecranVictoire')
-  if(mdpGuess.value === "test"){
+  const body = document.getElementsByTagName('body')[0];
+  const score = document.getElementById('score');
+
+  if(mdpGuess.value === "955825"){
     ecranvictoire.style.display = "flex"
+    body.style.overflow = "hidden"
+    score.innerHTML = "Reussit en " + (Math.floor(timeleft/60)) + " minutes " + timeleft%60 + " secondes"
   }else{
-    alert("mauvais");
+    alert("Mauvais mot de passe");
     mdpGuess.value = ""
   }
 }
@@ -94,11 +99,7 @@ interact('.draggable')
       end (event) {
         var textEl = event.target.querySelector('p')
 
-        textEl && (textEl.textContent =
-          'moved a distance of ' +
-          (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
-                     Math.pow(event.pageY - event.y0, 2) | 0))
-            .toFixed(2) + 'px')
+      
       }
     }
   })

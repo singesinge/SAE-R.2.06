@@ -86,10 +86,12 @@ main {
     display: none;
 }
 
-#folder, #chatImageFolder, #chrome, #twitter{
+#folder, #chatImageFolder, #chrome, #twitter, #folderDocument, #profilTwitter{
     width: fit-content;
     height: auto;
     position: relative;
+    top: 10%;
+    left: 0%;
 }
 
 #chatImageFolder{
@@ -284,6 +286,24 @@ body::before{
     cursor: pointer;
 }
 
+#openTwitterProfile{
+    position: absolute;
+    width: 12%;
+    height: 5%;
+    top: 37%;
+    left: 8%;
+    cursor: pointer;
+}
+
+#openPasswordButton{
+    position: absolute;
+    width: 12%;
+    height: 22%;
+    top: 22%;
+    left: 5%;
+    cursor: pointer;
+}
+
 #passwordDocument{
     align-items: center;
     justify-content: center;
@@ -308,7 +328,7 @@ body::before{
     font-family: 'Segoe UI', sans-serif;
 }
 
-#openImageFolderButton:hover, #openDocumentFolderButton:hover{
+#openImageFolderButton:hover, #openDocumentFolderButton:hover, #openTwitterProfile:hover{
     background-color: rgba(163, 163, 163, 0.16);
     border-radius: 4px;
     transition: background-color 0.4s;
@@ -420,6 +440,7 @@ body::before{
 #ecranDefaite,  #ecranVictoire{
     position: absolute;
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     top: 100vh;
@@ -444,6 +465,10 @@ body::before{
 #ecranDefaite h1,  #ecranVictoire h1{
     color: white;
     font-size: 4em;
+}
+
+#ecranVictoire h2{
+    color: white;
 }
 
 

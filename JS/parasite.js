@@ -1,5 +1,5 @@
 let lmessage = [
-    "msg"
+    "R - 95"
 ]
 
 function createMessage(){
